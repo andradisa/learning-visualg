@@ -1,0 +1,26 @@
+algoritmo "Soma e Média"
+
+var
+  num1: inteiro
+  num2: inteiro
+  n1, n2, soma: inteiro
+  media: real
+
+inicio
+Escreval ("Vamos realizar uma soma e encontrar a média entre dois números!")
+  Escreva ("Digite o primeiro número: ")
+  Leia(n1)
+  escreval (n1)
+
+  Escreva ("Agora o segundo número:")
+  leia(n2)
+  escreval (n2)
+
+  soma <- n1+n2
+  media <- (n1+n2)/2
+  Escreval ("O resultado da soma entre ", n1, " e ", n2, " é: ", soma)
+  Escreva ("A média é igual a ", media)
+
+
+
+fimalgoritmo
