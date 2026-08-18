@@ -1,0 +1,20 @@
+algoritmo "MenorPercurso"
+var
+   C, E1, E2 : inteiro
+   menorDist : inteiro
+
+inicio
+   escreval("Este é um programa utilizado para calcular a menor distância percorrida por um carteiro cujas duas encomendas do dia precisam ser entregues na mesma rua onde fica sua agência. Para isto, digite o número de endereço da agência: ")
+   leia(C)
+   
+   escreval("Agora, o número da primeira residência: ")
+   leia(E1)
+   
+   escreval("Por último, a última residência: ")
+   leia(E2)
+
+   menorDist <- abs(C - E1) + abs(E1 - E2) + abs(E2 - C)
+
+   escreval("A menor distância total percorrida é: ", menorDist, " metros.")
+
+fimalgoritmo
