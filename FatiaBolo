@@ -1,0 +1,22 @@
+algoritmo "MaiorFatiaBolo"
+var
+B, T, soma: inteiro
+rafael, sofia, resultado: inteiro
+
+inicio
+     escreval("Insira aqui o valor em centímetros de onde ocorreu o corte da base do bolo: ")
+leia(B)
+     escreval("Agora, o valor em centímetros do topo do bolo: ")
+leia(T)
+   
+     soma <- B + T
+
+     rafael <- soma \ 161
+
+     sofia <- (320 - soma) \ 161
+   
+     resultado <- (rafael * 1) + (sofia * 2)
+   
+     escreval(resultado)
+
+fimalgoritmo
