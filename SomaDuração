@@ -1,0 +1,41 @@
+algoritmo "SomaDuração"
+
+var
+  h1, m1, s1: inteiro
+  h2, m2, s2: inteiro
+  somasegundos1, somasegundos2, totalsegundos: inteiro
+  hfinal, resto, mfinal, sfinal: inteiro
+
+inicio
+
+  escreval("Duração da atividade 1:")
+  escreval ("Horas:")
+    leia (h1)
+  escreval ("Minutos:")
+    leia (m1)
+  escreval ("Segundos:")
+    leia (s1)
+
+  somasegundos1 <- (h1*3600) + (m1*60) + s1
+
+  escreval("Duração da atividade 2:")
+  escreval ("Horas:")
+    leia (h2)
+  escreval ("Minutos:")
+    leia (m2)
+  escreval ("Segundos:")
+    leia (s2)
+
+  somasegundos2 <- (h2*3600) + (m2*60) + s2
+
+  totalsegundos <- (somasegundos1 + somasegundos2)
+
+  hfinal <- totalsegundos \ 3600
+  resto <- totalsegundos MOD 3600
+  mfinal <- resto \ 60
+  sfinal <- resto MOD 60
+
+  escreval ("Duração da soma das duas atividades: ", hfinal, " horas, ", mfinal, " minutos e ", sfinal, " segundos.")
+
+
+fimalgoritmo
